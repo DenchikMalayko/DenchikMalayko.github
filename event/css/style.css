@@ -1,0 +1,187 @@
+/*Начало и Фильтрация*/
+.section1 h1{
+	font-size: 5em;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.section1 ul{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.section1 ul li{
+	display: inline-block;
+	font-size: 20px;
+	font-family: Helvetica, sans-serif;
+	margin: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+	cursor: pointer;
+}
+.section1 ul li:hover,
+.section1 ul li.active{
+	color: #487fc0;
+	border-bottom: 3px solid #487fc0;
+}
+.section1 ul li i{font-size: 30px;}
+/*Начало Cобытия(Фон секции)*/
+.section2{
+	width: 100%;
+	height: 100vh;
+	background-color: #f8f8f9;
+}
+.section2 h3{
+	text-align: center;
+	padding: 70px;
+	color: #8d8d92;
+}
+/*Блок с событием*/
+.section2Block{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+.section2Block:hover{box-shadow: 0 0 20px rgba(0,0,0,0.5);}
+/*Блок с фото*/
+.section2BlockInfo1 img{
+	width: 100%;
+	height: 350px;
+}
+/*Блок с текстом и контактами*/
+.section2BlockInfo2{padding: 25px;}
+.section2BlockInfo2 h2{
+	font-weight: 700;
+	color: #333;
+}
+.section2BlockInfo2 span{
+	background-color: #000;
+	color: #fff;
+	padding: 8px 10px;
+	margin: 5px;
+	margin-bottom: 0px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.section2BlockInfo2 span:hover{
+	background-color: #487fc0;
+}
+.section2BlockInfo2 p,
+.section2BlockInfo3 p{
+	color: #8d8d92;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+/*Блок с датами*/
+.section2BlockInfo3{
+	padding-top: 80px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.section2BlockInfo3 img{
+	margin-right: 20px;
+}
+.section2BlockInfo3 button{
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #000;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+}
+.section2BlockInfo3 button:hover{
+	background-color: #fff;
+	color: #000;
+}
+/*Блок с датами и выпадающим меню*/
+.section2BlockInfo3Button{
+	width: 90%;
+}
+.section2BlockInfo3ButtonAlert{
+	width: 90%;
+	border: 1px solid #8d8d92;
+	position: absolute;
+	background-color: #fff;
+	color: #8d8d92;
+	display: none;
+}
+.section2BlockInfo3ButtonAlert ul li{
+	display: block;
+	text-align: left;
+}
+.section2BlockInfo3ButtonAlert ul li:hover{
+	border: none;
+	color: #000;
+}
+.section2BlockInfo3Button:hover .section2BlockInfo3ButtonAlert{
+	display: block;
+}
+/*Мобильная верстка*/
+@media(max-width: 1199px){
+	.section2BlockInfo2 p,
+	.section2BlockInfo3 p,
+	.section2BlockInfo3ButtonAlert ul li{font-size: 14px;}
+}
+@media(max-width: 991px){
+	.section2BlockInfo1 img{height: 250px;}
+	.section2BlockInfo2{padding: 0px;}
+	.section2BlockInfo2 h2{font-size: 18px;}
+	.section2BlockInfo2 p,
+	.section2BlockInfo3 p{font-size: 14px;}
+	.section2BlockInfo3{padding-top: 25px;}
+	.section2BlockInfo3 img{margin-right: 0px;}
+	.section2BlockInfo3ButtonAlert ul li,
+	.section2BlockInfo3ButtonAlert ul li i{font-size: 12px;}
+}
+@media(max-width:767px){
+	.section1 h1{padding-bottom: 25px;font-size: 4em;}
+	.section1 ul li i{font-size: 20px;}
+	.section2 h3{padding: 30px;}
+	.section2BlockInfo1 img{height: 370px;}
+	.section2BlockInfo2{padding: 15px;}
+	.section2BlockInfo3 p{display: inline-block;width: 31%;text-align: center;}
+	.section2BlockInfo3Button{margin: auto; margin-bottom: 15px;}
+	.section2BlockInfo3ButtonAlert ul li,
+	.section2BlockInfo3ButtonAlert ul li i{font-size: 15px;}
+}
+@media(max-width:630px){
+	.section1 ul li{
+		font-size: 18px;
+		margin: 10px;
+		margin-bottom: 0px;
+		padding-bottom: 10px;
+	}
+	.section2BlockInfo1 img{height: 300px;}
+}
+@media(max-width:520px){
+	.section1 h1{font-size: 3em;}
+	.section1 ul li{font-size: 16px;margin: 5px;padding-bottom: 5px;}
+}
+@media(max-width: 450px){
+	.section1 ul li{font-size: 15px;}
+	.section2 h3{padding: 20px;}
+	.section2BlockInfo3 p{text-align: center;font-size: 12px;}
+	.section2BlockInfo3ButtonAlert ul li{font-size: 14px;}
+}
+@media(max-width:410px){
+	.section1 ul li{font-size: 14px;}
+	.section2BlockInfo1 img{height: 250px;}
+	.section2BlockInfo3 img{width: 20px;height: 20px;}
+}
+@media(max-width:375px){
+	.section1 h1{font-size: 2em; padding-bottom: 15px;}
+	.section1 ul li{font-size: 12px;}
+	.section1 ul li i{font-size: 15px;}
+	.section2 h3{padding: 15px;font-size: 2em;}
+	.section2BlockInfo3 {padding-top: 5px;}
+	.section2BlockInfo3 p{font-size: 11px;}
+}
+@media(max-width:330px){
+	.section1 ul li{font-size: 10px;margin: 3px;}
+	.section2 h3{font-size: 15px;}
+	.section2BlockInfo1 img{height: 200px;}
+	.section2BlockInfo2 p{font-size: 13px;}
+	.section2BlockInfo3 p{font-size: 9px;}
+	.section2BlockInfo3ButtonAlert ul li{font-size: 13px;}
+}
